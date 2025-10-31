@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cara Menginstall MySQL</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004b87;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 5px solid #00365f;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #004b87;
+    }
+    ul {
+      margin-left: 20px;
+    }
+
+    /* 🔹 Link umum (misalnya di paragraf atau isi teks) */
+    a.text-link {
+      color: purple;
+      text-decoration: underline;
+      background: none;
+      padding: 0;
+      border: none;
+      border-radius: 0;
+    }
+    a.text-link:hover {
+      color: #800080;
+      text-decoration: none;
+    }
+
+    /* 🔹 Tombol navigasi (misal link ke halaman sebelumnya) */
+    a.nav-link {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #004b87;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a.nav-link:hover {
+      background-color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cara Menginstall MySQL</h1>
+  </header>
+
+  <main>
+    <h2>Langkah-langkah Instalasi MySQL</h2>
+
+    <h3>1. Unduh MySQL Installer</h3>
+    <ul>
+      <li>
+        Buka situs resmi MySQL di 
+        <a href="https://dev.mysql.com/downloads/installer/" target="_blank" class="text-link">
+          https://dev.mysql.com/downloads/installer/
+        </a>.
+      </li>
+      <li>Pilih <strong>MySQL Installer for Windows</strong> (biasanya versi <em>Windows (x86, 32-bit, MSI Installer)</em>).</li>
+      <li>Klik <strong>Download</strong> dan tunggu hingga proses unduhan selesai.</li>
+    </ul>
+
+    <h3>2. Jalankan Installer</h3>
+    <ul>
+      <li>Setelah file selesai diunduh, klik dua kali file tersebut untuk memulai instalasi.</li>
+      <li>Jika muncul peringatan keamanan, pilih <strong>Yes</strong> untuk melanjutkan.</li>
+    </ul>
+
+    <h3>3. Pilih Jenis Setup</h3>
+    <ul>
+      <li><strong>Developer Default</strong> — instal semua komponen umum seperti MySQL Server, Workbench, dan konektor.</li>
+      <li><strong>Server Only</strong> — hanya menginstal MySQL Server.</li>
+      <li><strong>Custom</strong> — memilih komponen secara manual.</li>
+      <li>Disarankan memilih <strong>Developer Default</strong>, lalu klik <strong>Next</strong>.</li>
+    </ul>
+
+    <h3>4. Periksa Kebutuhan Sistem (Check Requirements)</h3>
+    <ul>
+      <li>Installer akan memeriksa apakah semua komponen pendukung sudah tersedia.</li>
+      <li>Jika ada yang belum, klik <strong>Execute</strong> untuk menginstalnya secara otomatis.</li>
+    </ul>
+
+    <h3>5. Mulai Instalasi</h3>
+    <ul>
+      <li>Klik <strong>Execute</strong> untuk memulai proses instalasi MySQL dan tunggu hingga selesai.</li>
+    </ul>
+
+    <h3>6. Konfigurasi MySQL Server</h3>
+    <ul>
+      <li>Pilih tipe server (biasanya <strong>Standalone MySQL Server</strong>).</li>
+      <li>Tentukan port (default: <strong>3306</strong>).</li>
+      <li>Buat password untuk user <strong>root</strong> (administrator), lalu klik <strong>Next</strong>.</li>
+    </ul>
+
+    <h3>7. Mulai Layanan MySQL</h3>
+    <ul>
+      <li>Pastikan opsi <strong>Start MySQL as a Windows Service</strong> dicentang.</li>
+      <li>Klik <strong>Execute</strong> untuk menjalankan server MySQL.</li>
+    </ul>
+
+    <h3>8. Selesai dan Uji MySQL Workbench</h3>
+    <ul>
+      <li>Setelah instalasi selesai, buka <strong>MySQL Workbench</strong>.</li>
+      <li>Login menggunakan username <strong>root</strong> dan password yang sudah dibuat.</li>
+      <li>Jika berhasil masuk, berarti MySQL sudah terpasang dengan benar.</li>
+    </ul>
+
+    <a href="https://vneris1.github.io/tekkom.github.io/hal4.html" class="nav-link">Lanjut Ke halaman berikutnya</a>
+    <a href="https://vneris1.github.io/tekkom.github.io/hal2.html" class="nav-link">Kembali ke halaman sebelumnya</a>
+  </main>
+</body>
+</html>
