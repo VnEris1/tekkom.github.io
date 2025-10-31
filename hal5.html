@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menjalankan MySQL Pertama Kali</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #004b87;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 5px solid #00365f;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #004b87;
+    }
+    ul {
+      margin-left: 20px;
+    }
+
+    /* Link ungu tanpa kotak di isi teks */
+    a.text-link {
+      color: purple;
+      text-decoration: underline;
+      background: none;
+      padding: 0;
+      border: none;
+      border-radius: 0;
+    }
+    a.text-link:hover {
+      color: #800080;
+      text-decoration: none;
+    }
+
+    /* Tombol navigasi */
+    a.nav-link {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #004b87;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a.nav-link:hover {
+      background-color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Membuat data MySQL</h1>
+  </header>
+
+  <main>
+    <h2>1. Membuat Database</h2>
+    <ul>
+      <li>
+      CREATE DATABASE nama_database;
+        </li>
+    </ul>
+
+    <h2>2. Mengecek database yang dibuat</h2>
+    <ul>
+      <li>
+        show tables;
+        </li>
+        <li>  
+        (Jika belum keluar maka database belum terbentuk.) 
+      </li>
+    </ul>
+
+    <h2>3. Membuat table untuk database.</h2>
+    <ul>
+        <li>
+            create table nama_table(id int AUTO_INCREMENT, nama varchar(10),tanggal_lahir varchar(20));
+        </li>
+        <li>
+            Ini adalah query untuk membuat table.
+        </li>
+    </ul>
+
+    <h2>4. Membuat isi untuk table.</h2>
+    <ul>
+        <li>
+            insert into nama_table values("nama", "11-11-1999");
+        </li>
+        <li>
+            Ini adalah query untuk menginput data.
+        </li>
+        <li>
+            Untuk huruf harus menggunakan tanda "isi" dan untuk angka tidak perlu menggunakan "".
+        </li>
+    </ul>
+
+    <a href="https://vneris1.github.io/tekkom.github.io/hal6.html" class="nav-link">Lanjut ke Halaman Sebelumnya</a>
+    <a href="https://vneris1.github.io/tekkom.github.io/hal4.html" class="nav-link">Kembali ke Halaman Sebelumnya</a>
+  </main>
+</body>
+</html>
